@@ -1,8 +1,10 @@
 <?php declare(strict_types=1);
 
+use Hyva\Theme\ViewModel\HyvaCsp;
+
 /** @var \Magento\Framework\Escaper $escaper */
 /** @var \Magento\Framework\View\Element\Template $block */
-
+/** @var HyvaCsp $hyvaCsp */
 ?>
 <script>
     (() => {
@@ -71,3 +73,4 @@
         }
     })()
 </script>
+<?php $hyvaCsp->registerInlineScript() ?>
